@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Nm9d9TQKD449KOw/zi6vw+2MQGLk6H/sG8JfPjXAqqcj3FtHEORGa1DTamn/7Qd5xnHQu1DjbjH7y/4E+d0/Ug==",
+  "dgSpecHash": "W8Oq/oLMLhYvHpAyOrV+7GlGm1j/x7f4O6sMXJ5pBQqpEmCER8Hy07eYFiIkMlzJdsDXBj31NeIHqA3n+kaaQw==",
   "success": true,
   "projectFilePath": "D:\\Projects\\dotNetprojects\\InstagramWithDotnetAndAngular\\api\\API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\yaswa\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\yaswa\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\yaswa\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\yaswa\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\yaswa\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\yaswa\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\yaswa\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\yaswa\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.10\\microsoft.entityframeworkcore.6.0.10.nupkg.sha512",
