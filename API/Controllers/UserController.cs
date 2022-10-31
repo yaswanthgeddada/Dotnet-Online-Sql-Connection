@@ -7,13 +7,16 @@ using API.DTOs;
 using API.Models;
 using API.Repositories.Interfaces;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
 
 
-    public class UserController : BaseApiController
+    [ApiController]
+    [Route("api/[controller]")]
+    public class UserController : ControllerBase
     {
         private readonly DataContext _context;
         public IUserRepository _userRepository { get; }
@@ -27,6 +30,7 @@ namespace API.Controllers
         }
 
         [HttpGet("getAllUserDetails")]
+        [Authorize]
         public async Task<IActionResult> GetAllUserDetails()
         {
             var users = await _userRepository.GetAllUserDetails();
@@ -34,6 +38,7 @@ namespace API.Controllers
         }
 
         [HttpGet("getUserDetails/{id}")]
+        [Authorize]
         public async Task<IActionResult> GetUserDetail(int id)
         {
             var user = await _userRepository.GetUserDetails(id);
@@ -45,12 +50,13 @@ namespace API.Controllers
         public async Task<IActionResult> AddUser(User userdetails)
         {
             var res = await _userRepository.AddUser(userdetails);
-            if (res) return Ok(res);
+            if (res) return Ok("added user Successfully");
 
             return BadRequest("Failed to add user");
         }
 
         [HttpPut("updateUser/{id}")]
+        [Authorize]
         public async Task<IActionResult> UpdateUser([FromRoute] int id, [FromBody] UserDto userdetails)
         {
             var res = await _userRepository.UpdateUser(id, userdetails);
